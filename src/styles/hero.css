@@ -1,0 +1,115 @@
+.hero-shell {
+	width: min(1080px, calc(100% - 2rem));
+	margin: 1.25rem auto 2rem;
+}
+
+.hero-card {
+	background: rgba(8, 16, 24, 0.88);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	overflow: hidden;
+	backdrop-filter: blur(10px);
+}
+
+.hero-card__media {
+	position: relative;
+	min-height: 320px;
+	background: linear-gradient(135deg, #05070a 0%, #12161d 100%);
+}
+
+.hero-card__image {
+	display: block;
+}
+
+.hero-card__media-overlay {
+	position: absolute;
+	inset: 0;
+	background:
+		linear-gradient(90deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.45) 100%),
+		linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.25) 100%);
+	pointer-events: none;
+}
+
+.hero-card__content {
+	padding: 1.25rem 1.2rem 1.15rem;
+	color: #eef3f8;
+	background:
+		radial-gradient(circle at top right, rgba(35, 77, 97, 0.35), transparent 45%),
+		linear-gradient(180deg, rgba(10, 17, 23, 0.98), rgba(7, 13, 18, 1));
+}
+
+.hero-card__eyebrow {
+	font-size: 0.95rem;
+	font-weight: 700;
+	color: #dbe5ee;
+}
+
+.hero-card__title {
+	margin: 0;
+	font-size: clamp(2rem, 3vw, 2.6rem);
+	letter-spacing: 0.02em;
+	font-weight: 700;
+}
+
+.hero-card__thumbnail {
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	filter: saturate(0.95) contrast(1.03);
+}
+
+.hero-card__description {
+	font-size: 1rem;
+	line-height: 1.35;
+	color: #dde4ea;
+}
+
+.hero-card__highlight {
+	color: #b7e04b;
+}
+
+.hero-card__tag {
+	padding: 0.34rem 0.6rem;
+	font-size: 0.78rem;
+	line-height: 1;
+}
+
+.hero-card__footer {
+	margin-top: auto;
+	padding-top: 0.15rem;
+}
+
+.hero-card__price {
+	font-size: 1rem;
+	font-weight: 700;
+	color: #eef3f8;
+}
+
+.hero-card__cta {
+	min-width: 86px;
+	padding: 0.7rem 1rem;
+	border-radius: 999px;
+}
+
+@media (max-width: 860px) {
+	.hero-card__media {
+		min-height: 280px;
+	}
+}
+
+@media (max-width: 560px) {
+	.hero-shell {
+		width: min(100% - 1rem, 1080px);
+		margin-top: 0.9rem;
+	}
+
+	.hero-card {
+		border-radius: 16px;
+	}
+
+	.hero-card__content {
+		padding: 1rem;
+	}
+
+	.hero-card__footer {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
