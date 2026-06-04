@@ -1,10 +1,13 @@
 import { useState } from "react";
 import "./App.css";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
-      <div>{/*NavBar */}</div>
+      <div>
+        <NavBar />
+      </div>
 
       <div className="heroSection">
         <h6>Sobre el proyecto</h6>
