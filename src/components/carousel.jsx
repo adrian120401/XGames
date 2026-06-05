@@ -7,6 +7,7 @@ import candycrush from "../assets/candycrush.jpg";
 
 const GAMES = [
   {
+    id: "assassins-creed",
     title: "Assassin´s Creed II",
     image: assassins,
     author: "Adrian De los Reyes",
@@ -15,6 +16,7 @@ const GAMES = [
       "Explora el Renacimiento italiano y conviértete en Ezio Auditore, un joven asesino en busca de venganza. Vive una aventura épica llena de acción, sigilo y secretos históricos.",
   },
   {
+    id: "spiderman",
     title: "Spider-Man",
     image: spiderman,
     author: "Agustin Bech",
@@ -23,6 +25,7 @@ const GAMES = [
       "El amigable hombre araña regresa con nuevas mecánicas de combate y un Nueva York más vivo que nunca.",
   },
   {
+    id: "expedition-33",
     title: "Expedition 33",
     image: expedition,
     author: "Eric Gallo",
@@ -31,6 +34,7 @@ const GAMES = [
       "Únete a la Expedición 33 y lucha contra un destino inevitable. Vive una aventura de fantasía oscura con combates innovadores y una narrativa emocionante.",
   },
   {
+    id: "candy-crush",
     title: "Candy Crush",
     image: candycrush,
     author: "Romina Sosa",
@@ -105,7 +109,7 @@ export default function Carousel() {
               <span className="game-date">{game.date}</span>
             </div>
             <p className="game-desc">{game.description}</p>
-            <a href="#" className="game-link">
+            <a href={`/${game.id}`} className="game-link">
               Leer más →
             </a>
           </div>
