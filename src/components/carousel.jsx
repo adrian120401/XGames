@@ -74,21 +74,21 @@ export default function Carousel() {
       return {
         transform: "translateX(90%) scale(0.68)",
         zIndex: 4,
-        opacity: 0.5,
+        opacity: 0,
         filter: "brightness(0.35)",
       };
     return {
       transform: "translateX(-90%) scale(0.68)",
       zIndex: 4,
-      opacity: 0.5,
+      opacity: 0,
       filter: "brightness(0.35)",
     };
   };
 
   return (
-    <section className="carousel-section">
+    <section className="carousel-section" id="juegos">
       <p className="carousel-label">Destacados</p>
-      <h2 className="carousel-title">Juegos principales</h2>
+      <h2 className="carousel-title">Juegos Principales</h2>
 
       <div className="carousel-stage">
         {GAMES.map((game, idx) => (

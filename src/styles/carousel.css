@@ -20,11 +20,12 @@
   font-weight: 900;
   color: #fff;
   margin-bottom: 2.5rem;
+  padding-bottom: 50px;
 }
 
 .carousel-stage {
   position: relative;
-  height: 420px;
+  height: 490px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +33,7 @@
 
 .carousel-card {
   position: absolute;
-  width: 320px;
+  width: 380px;
   background-color: var(--azul-oceano);
   border-radius: 14px;
   overflow: hidden;
@@ -55,9 +56,8 @@
 
 .game-image {
   width: 100%;
-  height: 210px;
+  height: 290px;
   object-fit: contain;
-  border-radius: 8px;
   color: rgba(240, 248, 255, 0.151);
 }
 
@@ -142,8 +142,8 @@
 }
 
 .dot {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   border-radius: 30%;
   background: var(--azul-oceano);
   cursor: pointer;
@@ -153,7 +153,8 @@
 }
 
 .dot.active {
-  width: 22px;
+  width: 28px;
   border-radius: 3px;
   background: var(--azul-marino);
+  height: 10px;
 }

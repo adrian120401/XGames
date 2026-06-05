@@ -14,7 +14,7 @@ export default function NavBar() {
         <a href="#" className="navbar-btn">
           Inicio
         </a>
-        <a href="#" className="navbar-btn">
+        <a href="#juegos" className="navbar-btn">
           Juegos
         </a>
         <a href="#" className="navbar-btn">
