@@ -33,6 +33,8 @@ function Game({
 	coverImage,
 	summary,
 	developer,
+	price,
+	description,
 }) {
 	const embedUrl = buildYoutubeEmbedUrl(youtubeUrl);
 
@@ -91,6 +93,32 @@ function Game({
 					</div>
 				</aside>
 			</article>
+
+			{price ? (
+				<div className="game-shell__purchase d-flex justify-content-start mt-3">
+					<div className="game-shell__purchase-card d-flex align-items-center justify-content-between gap-3 gap-md-4">
+						<p className="game-shell__purchase-copy mb-0">
+							Comprá <strong>{title}</strong>
+						</p>
+						<div className="game-shell__purchase-actions d-flex align-items-center gap-2 gap-md-3">
+							<div className="game-shell__purchase-price">{price}</div>
+							<button className="game-shell__purchase-btn btn btn-success fw-semibold" type="button">
+								<span>Agregar al carrito</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			) : null}
+
+			{description ? (
+				<section className="game-shell__about mt-4">
+					<div className="game-shell__about-header">
+						<h2 className="game-shell__about-title mb-0">Acerca de</h2>
+					</div>
+					<div className="game-shell__about-divider" aria-hidden="true" />
+					<p className="game-shell__about-description mb-0">{description}</p>
+				</section>
+			) : null}
 		</section>
 	);
 }
