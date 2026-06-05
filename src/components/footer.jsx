@@ -1,6 +1,7 @@
 import { FaYoutube, FaFacebook, FaTwitter } from "react-icons/fa";
 import "../styles/footer.css";
 
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -66,20 +67,18 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3>LEGAL</h3>
-            <a href="#">Privacidad</a>
-            <a href="#">Accesibilidad</a>
-            <a href="#">Avisos y políticas</a>
-            <a href="#">Cookies</a>
-            <a href="#">Reembolsos</a>
+            <h3>Programas</h3>
+            <a href="https://anima.edu.uy/programa-educativo/">Bachillerato tecnológico</a>
+            <a href="https://anima.edu.uy/finest/">Finest</a>
+            <a href="https://anima.edu.uy/academia-de-empleabilidad/">Academia de empleabilidad</a>
           </div>
 
           <div>
             <h3>MÁS</h3>
-            <a href="#">Obtener Steam</a>
-            <a href="#">Aplicaciones móviles</a>
-            <a href="#">Soporte</a>
-            <a href="#">Mi cuenta</a>
+            <a href="https://anima.edu.uy/comunidad/#idEquipo">Equipo</a>
+            <a href="tel:+59829093640">(+598) 2909 3640</a>
+            <a href="mailto:info@anima.edu.uy">info@anima.edu.uy</a>
+            <a href="#"> Mercedes 984 esq. Julio Herrera y Obes</a>
           </div>
         </div>
       </div>
