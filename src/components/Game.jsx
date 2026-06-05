@@ -1,4 +1,5 @@
 import "../styles/game.css";
+import { Link } from "react-router-dom";
 
 const YOUTUBE_ID_PATTERN = /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([A-Za-z0-9_-]{11})/;
 
@@ -37,6 +38,13 @@ function Game({
 
 	return (
 		<section className="game-shell container-fluid px-3 px-md-4" aria-labelledby="game-title">
+			<div className="game-shell__top d-flex justify-content-start mb-3">
+				<Link className="btn btn-outline-light game-shell__back-btn d-inline-flex align-items-center gap-2" to="/">
+					<i className="fa-solid fa-arrow-left" aria-hidden="true"></i>
+					<span>Volver</span>
+				</Link>
+			</div>
+
 			<article className="game-hero row g-0 shadow-lg rounded-4 overflow-hidden">
 				<div className="game-hero__media col-12 col-lg-6 position-relative">
 					{embedUrl ? (
@@ -55,7 +63,7 @@ function Game({
 				</div>
 
 				<aside className="game-hero__sidebar col-12 col-lg-6 d-flex flex-column" aria-label={`Ficha de ${title}`}>
-					<div className="game-hero__sidebar-row game-hero__cover-wrap justify-content-center">
+					<div className="game-hero__sidebar-row game-hero__cover-wrap">
 						<div className="game-hero__cover ratio ratio-16x9">
 							{coverImage ? (
 								<img className="game-hero__cover-image" src={coverImage} alt={`Portada de ${title}`} />

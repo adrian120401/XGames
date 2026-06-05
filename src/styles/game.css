@@ -3,6 +3,11 @@
 	margin: 1.25rem auto 2rem;
 }
 
+.game-shell__back-btn {
+	padding-inline: 0.95rem;
+	font-weight: 600;
+}
+
 .game-hero {
 	align-items: stretch;
 	min-height: 620px;
@@ -96,6 +101,7 @@
 
 .game-hero__cover-wrap {
 	padding-top: 0;
+    justify-items: center;
 }
 
 .game-hero__cover {

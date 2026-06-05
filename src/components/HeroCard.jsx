@@ -6,12 +6,12 @@ const defaultHeroCard = {
 	descriptionSuffix: "porque has jugado juegos etiquetados con Carreras, Simulador de Automóviles, Conducción y Deportes.",
 	price: "$U2.300",
 	mainImage:
-		"https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80",
+		"https://images.unsplash.com/photo-1742744652734-d5ec6598b5da?auto=format&fit=crop&w=1200&q=80",
 	gallery: [
-		"https://images.unsplash.com/photo-1511216113907-8f0f6c2d5f1e?auto=format&fit=crop&w=600&q=80",
-		"https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=600&q=80",
-		"https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=600&q=80",
-		"https://images.unsplash.com/photo-1541348263662-e068662d0c5a?auto=format&fit=crop&w=600&q=80",
+		"https://images.unsplash.com/photo-1699138346782-8a8b211c3da2?auto=format&fit=crop&w=600&q=80",
+		"https://images.unsplash.com/photo-1614949194403-9602bdc14a3a?auto=format&fit=crop&w=600&q=80",
+		"https://images.unsplash.com/photo-1728116693268-125c5d6ad9e2?auto=format&fit=crop&w=600&q=80",
+		"https://images.unsplash.com/photo-1712218952141-6e00f179fe84?auto=format&fit=crop&w=600&q=80",
 	],
 	tags: ["Carreras", "Simulador de Automóviles", "Conducción", "Deportes"],
 };
