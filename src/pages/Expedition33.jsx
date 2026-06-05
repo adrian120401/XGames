@@ -5,7 +5,7 @@ export default function Expedition33() {
         <Game
             title="Expedition 33"
             youtubeUrl="https://youtu.be/9baCqcVrNCc?si=MRHQ4Da33MlTomGN"
-            coverImage="https://image.api.playstation.com/vulcan/ap/rnd/202501/2217/e5833a53529ff9879e87689f1e8b04d45ba7e6c97fa791e2.png"
+            coverImage="https://www.gadgetmatch.com/wp-content/uploads/2025/03/clair-obscur-expedition-33-game-preview-sandfall-interarctive-bandai-namco-gadgetmatch-20250303-22.jpg"
             summary="Una vez al año, la Pintora se despierta y pinta sobre el Monolito su número maldito. Toda persona cuya edad sea mayor que ese número se convierte en humo y desaparece. Año tras año, ese número desciende y más personas se esfuman. Mañana, se despertará y pintará un 33, y emprenderemos nuestra misión final: acabar con la Pintora para que nunca más pueda pintar la muerte."
             developer="Eric Gallo"
             price="$1350"
