@@ -3,6 +3,7 @@ import Game from '../components/Game';
 export default function AssasainCreed() {
     return (
             <Game
+                gameId="assassins-creed-2"
                 title="Assassin's Creed 2"
                 youtubeUrl="https://www.youtube.com/watch?v=mb7Xzl2-lr0"
                 coverImage="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/33230/header.jpg?t=1682004272"

@@ -89,6 +89,102 @@
 	white-space: pre-line;
 }
 
+.game-shell__comments {
+	padding: 1rem 1.05rem 1.1rem;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 18px;
+	background: rgba(6, 10, 14, 0.78);
+	box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(10px);
+}
+
+.game-shell__comments-header {
+	margin-bottom: 0.7rem;
+}
+
+.game-shell__comments-title {
+	font-size: 0.98rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #f2f7fb;
+}
+
+.game-shell__comments-divider {
+	height: 1px;
+	background: rgba(255, 255, 255, 0.12);
+	margin-bottom: 0.85rem;
+}
+
+.game-shell__comments-form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+	margin-bottom: 1rem;
+}
+
+.game-shell__comments-label {
+	font-size: 0.92rem;
+	font-weight: 600;
+	color: rgba(236, 243, 249, 0.9);
+}
+
+.game-shell__comments-input {
+	width: 100%;
+	min-height: 120px;
+	padding: 0.9rem 1rem;
+	border-radius: 14px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background: rgba(3, 6, 9, 0.88);
+	color: #f2f7fb;
+	font-size: 0.98rem;
+	line-height: 1.5;
+	resize: vertical;
+	outline: none;
+}
+
+.game-shell__comments-input::placeholder {
+	color: rgba(236, 243, 249, 0.48);
+}
+
+.game-shell__comments-input:focus {
+	border-color: rgba(135, 197, 64, 0.65);
+	box-shadow: 0 0 0 0.2rem rgba(135, 197, 64, 0.12);
+}
+
+.game-shell__comments-btn {
+	padding-inline: 1rem;
+	border-radius: 10px;
+	background: linear-gradient(180deg, #87c540, #6ca02c);
+	border-color: #6ca02c;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.game-shell__comments-btn:hover,
+.game-shell__comments-btn:focus-visible {
+	background: linear-gradient(180deg, #94d84c, #78ae33);
+	border-color: #78ae33;
+}
+
+.game-shell__comments-list {
+	display: grid;
+	gap: 0.75rem;
+}
+
+.game-shell__comment-item {
+	padding: 0.85rem 0.95rem;
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.game-shell__comment-text,
+.game-shell__comments-empty {
+	color: rgba(236, 243, 249, 0.9);
+	font-size: 0.98rem;
+	line-height: 1.5;
+}
+
 .game-hero {
 	align-items: stretch;
 	min-height: 620px;
@@ -291,6 +387,10 @@
 	}
 
 	.game-shell__about {
+		padding: 0.9rem;
+	}
+
+	.game-shell__comments {
 		padding: 0.9rem;
 	}
 }

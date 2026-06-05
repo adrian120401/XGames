@@ -1,6 +1,7 @@
 import '../styles/game.css';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
+import Comments from './Comments';
 
 const YOUTUBE_ID_PATTERN =
     /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([A-Za-z0-9_-]{11})/;
@@ -37,6 +38,7 @@ function Game({
     developer,
     price,
     description,
+    gameId,
 }) {
     const embedUrl = buildYoutubeEmbedUrl(youtubeUrl);
 
@@ -142,6 +144,8 @@ function Game({
                         <p className="game-shell__about-description mb-0">{description}</p>
                     </section>
                 ) : null}
+
+                <Comments gameId={gameId ?? title} />
             </section>
         </div>
     );
