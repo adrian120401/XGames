@@ -22,17 +22,9 @@ const GAMES = [
     author: "Agustin Bech",
     date: "04/06/2026",
     description:
-      "El amigable hombre araña regresa con nuevas mecánicas de combate y un Nueva York más vivo que nunca.",
+      "El amigable hombre araña regresa con nuevas mecánicas de combate y balanceo a un Nueva York más vivo que nunca.",
   },
-  {
-    id: "expedition-33",
-    title: "Expedition 33",
-    image: expedition,
-    author: "Eric Gallo",
-    date: "04/06/2026",
-    description:
-      "Únete a la Expedición 33 y lucha contra un destino inevitable. Vive una aventura de fantasía oscura con combates innovadores y una narrativa emocionante.",
-  },
+
   {
     id: "candy-crush",
     title: "Candy Crush",
@@ -41,6 +33,16 @@ const GAMES = [
     date: "04/06/2026",
     description:
       "El fenómeno mobil que conquistó millones. Nuevos niveles y eventos especiales que no te podés perder.",
+  },
+  
+  {
+    id: "expedition-33",
+    title: "Expedition 33",
+    image: expedition,
+    author: "Eric Gallo",
+    date: "04/06/2026",
+    description:
+      "Únete a la Expedición 33 y lucha contra un destino inevitable. Vive una aventura de fantasía oscura con combates innovadores y una narrativa emocionante.",
   },
 ];
 
