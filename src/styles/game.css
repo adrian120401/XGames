@@ -116,11 +116,88 @@
 	margin-bottom: 0.85rem;
 }
 
+.game-shell__review {
+	padding: 0.85rem 0.95rem;
+	margin-bottom: 1rem;
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.game-shell__review-label {
+	font-size: 0.82rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: rgba(236, 243, 249, 0.66);
+}
+
+.game-shell__review-stars,
+.game-shell__comment-rating {
+	display: flex;
+	align-items: center;
+	gap: 0.2rem;
+}
+
+.game-shell__star,
+.game-shell__rating-star {
+	font-size: 1rem;
+	line-height: 1;
+	color: rgba(236, 243, 249, 0.28);
+}
+
+.game-shell__star--filled,
+.game-shell__rating-star--active {
+	color: #f0c74f;
+}
+
+.game-shell__review-score {
+	font-size: 1rem;
+	font-weight: 700;
+	color: #f2f7fb;
+}
+
 .game-shell__comments-form {
 	display: flex;
 	flex-direction: column;
 	gap: 0.7rem;
 	margin-bottom: 1rem;
+}
+
+.game-shell__rating-group {
+	display: grid;
+	gap: 0.5rem;
+	padding: 0.85rem 0.95rem;
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.game-shell__rating-stars {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem;
+}
+
+.game-shell__rating-star {
+	appearance: none;
+	border: 0;
+	background: transparent;
+	padding: 0;
+	cursor: pointer;
+	transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.game-shell__rating-star:hover,
+.game-shell__rating-star:focus-visible {
+	transform: translateY(-1px) scale(1.08);
+	color: #ffd972;
+	outline: none;
+}
+
+.game-shell__rating-hint {
+	font-size: 0.9rem;
+	color: rgba(236, 243, 249, 0.68);
 }
 
 .game-shell__comments-label {
@@ -166,6 +243,11 @@
 	border-color: #78ae33;
 }
 
+.game-shell__comments-btn:disabled {
+	opacity: 0.55;
+	cursor: not-allowed;
+}
+
 .game-shell__comments-list {
 	display: grid;
 	gap: 0.75rem;
@@ -176,6 +258,8 @@
 	border-radius: 14px;
 	background: rgba(255, 255, 255, 0.03);
 	border: 1px solid rgba(255, 255, 255, 0.06);
+	display: grid;
+	gap: 0.4rem;
 }
 
 .game-shell__comment-text,
@@ -392,5 +476,10 @@
 
 	.game-shell__comments {
 		padding: 0.9rem;
+	}
+
+	.game-shell__review,
+	.game-shell__rating-group {
+		padding: 0.8rem;
 	}
 }

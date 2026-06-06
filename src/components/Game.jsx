@@ -25,6 +25,7 @@ function buildYoutubeEmbedUrl(link) {
         playsinline: '1',
         rel: '0',
         modestbranding: '1',
+        vq: 'hd2160',
     });
 
     return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
