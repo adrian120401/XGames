@@ -9,6 +9,7 @@ export default function AssasainCreed() {
       summary="Una épica historia de familia, venganza y conspiración ambientada en el impecable pero brutal escenario de la Italia renacentista. ¡Nuevo precio reducido!"
       developer="Adrián de los Reyes"
       price="$659"
+      requiresAgeVerification
       description="Assassin's Creed® 2 es la secuela del título que se convirtió en la IP nueva más vendida en la historia de los videojuegos. El esperado título presenta a un nuevo héroe, Ezio Auditore da Firenze, un joven noble italiano, y una nueva era: el Renacimiento.
         Assassin's Creed 2 conserva la experiencia de juego central que hizo del primer opus un éxito rotundo e incorpora nuevas experiencias que sorprenderán y desafiarán a los jugadores.
         Assassin's Creed 2 es una épica historia de familia, venganza y conspiración ambientada en el impecable pero brutal escenario de la Italia renacentista. Ezio se hace amigo de Leonardo da Vinci, se enfrenta a las familias más poderosas de Florencia y recorre los canales de Venecia, donde aprende a convertirse en un maestro asesino.
