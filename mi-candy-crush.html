@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Romina Sosa - Mi Mundo Candy Crush</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     <script>
+         tailwind.config = {
+             theme: {
+                 extend: {
+                     colors: {
+                         candyBlue: '#1E90FF',
+                         candyPink: '#FF69B4',
+                         candyYellow: '#FFD700',
+                         candyGreen: '#32CD32',
+                         candyPurple: '#9932CC',
+                         candyOrange: '#FF8C00',
+                         candyRed: '#FF4444'
+                     },
+                     fontFamily: {
+                         candy: ['"Comic Sans MS"', 'cursive', 'sans-serif'],
+                     }
+                 }
+             }
+         }
+     </script>
+     <style type="text/tailwindcss">
+         @layer utilities {
+             .text-shadow {
+                 text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+             }
+             .border-candy {
+                 border: 5px solid white;
+                 box-shadow: 0 0 0 3px #ccc, 0 4px 8px rgba(0,0,0,0.2);
+             }
+             .btn-candy {
+                 @apply px-6 py-3 rounded-full text-white font-bold text-shadow border-candy transition-transform hover:scale-105;
+             }
+             .bg-pattern {
+                 background-image: radial-gradient(#ffffff33 1px, transparent 1px);
+                 background-size: 20px 20px;
+             }
+         }
+     </style>
+ </head>
+ <body class="bg-gradient-to-br from-candyBlue via-candyPurple to-candyPink min-h-screen font-candy bg-pattern">
+     <!-- Encabezado -->
+     <header class="text-center py-8">
+         <h1 class="text-5xl md:text-6xl font-extrabold text-white text-shadow">🍬 Mi Mundo Candy Crush 🍭</h1>
+         <p class="text-white text-xl mt-2 text-shadow">¡Bienvenida, Romina Sosa!</p>
+     </header>
+     <!-- Contenido principal -->
+     <main class="container mx-auto px-4 pb-12">
+         <!-- Perfil personal -->
+         <div class="bg-white rounded-3xl p-6 max-w-md mx-auto mb-8 border-candy text-center">
+             <div class="w-36 h-36 rounded-full bg-gradient-to-br from-candyYellow to-candyOrange mx-auto flex items-center justify-center text-6xl border-candy">
+                 😊
+             </div>
+             <h2 class="text-3xl font-bold text-candyPurple mt-4">Romina Sosa</h2>
+             <p class="text-gray-700 mt-2">Nivel actual: <span class="text-candyRed font-bold">2500+</span> 🌟</p>
+             <p class="text-gray-600 mt-1">Objetivo: ¡Pasar todos los niveles!</p>
+         </div>
+         <!-- Botones de acción -->
+         <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+             <button class="btn-candy bg-candyYellow text-candyPurple">
+                 <i class="fa fa-play mr-2"></i> Jugar Ahora
+             </button>
+             <button class="btn-candy bg-candyGreen">
+                 <i class="fa fa-trophy mr-2"></i> Mis Logros
+             </button>
+             <button class="btn-candy bg-candyPink">
+                 <i class="fa fa-heart mr-2"></i> Vidas y Bonos
+             </button>
+             <button class="btn-candy bg-candyOrange">
+                 <i class="fa fa-share-alt mr-2"></i> Compartir
+             </button>
+         </div>
+         <!-- Tablero decorativo -->
+         <div class="mt-10 bg-white bg-opacity-90 rounded-3xl p-6 max-w-xl mx-auto border-candy">
+             <h3 class="text-center text-2xl font-bold text-candyBlue mb-4">Mi Tablero Personal</h3>
+             <div class="grid grid-cols-5 gap-3 justify-items-center">
+                 <div class="w-14 h-14 rounded-full bg-candyPink flex items-center justify-center text-2xl shadow-md">🍒</div>
+                 <div class="w-14 h-14 rounded-full bg-candyYellow flex items-center justify-center text-2xl shadow-md">🍋</div>
+                 <div class="w-14 h-14 rounded-full bg-candyGreen flex items-center justify-center text-2xl shadow-md">🍏</div>
+                 <div class="w-14 h-14 rounded-full bg-candyPurple flex items-center justify-center text-2xl shadow-md">🍇</div>
+                 <div class="w-14 h-14 rounded-full bg-candyOrange flex items-center justify-center text-2xl shadow-md">🍊</div>
+                 <div class="w-14 h-14 rounded-full bg-candyGreen flex items-center justify-center text-2xl shadow-md">🍏</div>
+                 <div class="w-14 h-14 rounded-full bg-candyPink flex items-center justify-center text-2xl shadow-md">🍒</div>
+                 <div class="w-14 h-14 rounded-full bg-candyOrange flex items-center justify-center text-2xl shadow-md">🍊</div>
+                 <div class="w-14 h-14 rounded-full bg-candyYellow flex items-center justify-center text-2xl shadow-md">🍋</div>
+                 <div class="w-14 h-14 rounded-full bg-candyPurple flex items-center justify-center text-2xl shadow-md">🍇</div>
+                 <div class="w-14 h-14 rounded-full bg-candyPurple flex items-center justify-center text-2xl shadow-md">🍇</div>
+                 <div class="w-14 h-14 rounded-full bg-candyOrange flex items-center justify-center text-2xl shadow-md">🍊</div>
+                 <div class="w-14 h-14 rounded-full bg-candyPink flex items-center justify-center text-2xl shadow-md">🍒</div>
+                 <div class="w-14 h-14 rounded-full bg-candyGreen flex items-center justify-center text-2xl shadow-md">🍏</div>
+                 <div class="w-14 h-14 rounded-full bg-candyYellow flex items-center justify-center text-2xl shadow-md">🍋</div>
+             </div>
+         </div>
+     </main>
+     <!-- Pie de página -->
+     <footer class="text-center text-white py-4 text-shadow">
+         <p>© 2026 | Diseñada especialmente para Romina Sosa ✨</p>
+     </footer>
+ </body>
+ </html>
