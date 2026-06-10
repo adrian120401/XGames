@@ -3,7 +3,7 @@ import "../styles/Carousel.css";
 import assassins from "../assets/assassins.jpg";
 import spiderman from "../assets/spiderman.jpg";
 import expedition from "../assets/expedition.jpg";
-import candycrush from "../assets/candycrush.jpg";
+import candycrush from "../assets/candycrush.png";
 
 const GAMES = [
   {
@@ -26,7 +26,7 @@ const GAMES = [
   },
 
   {
-    id: "candy-crush",
+    id: "Candycrush",
     title: "Candy Crush",
     image: candycrush,
     author: "Romina Sosa",
