@@ -14,8 +14,7 @@ function App() {
       <Route path="/assassins-creed" element={<AssasainCreed />} />
       <Route path="/expedition-33" element={<Expedition33 />} />
       <Route path="/spiderman" element={<SpiderMan />} />
-      <Route path="/candy-crush" element={<Candycrush />} />
-      <Route path="/AboutUs" element={<AboutUs />} />
+      <Route path="/Candycrush" element={<Candycrush />} />
     </Routes>
   );
 }
