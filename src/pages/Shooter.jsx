@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import gameOverImage from "../assets/gameover.png";
 
 const INITIAL_HEALTH = 3;
 const PLAYER_WIDTH = 72;
@@ -133,20 +134,37 @@ function drawHUD(ctx, state) {
   ctx.restore();
 }
 
-function drawGameOver(ctx, state) {
+function drawGameOver(ctx, state, image) {
   ctx.save();
-  ctx.fillStyle = "rgba(0, 0, 0, 0.58)";
-  ctx.fillRect(0, 0, state.width, state.height);
+  if (image && image.complete && image.naturalWidth > 0) {
+    ctx.drawImage(image, 0, 0, state.width, state.height);
+  } else {
+    ctx.fillStyle = "#120b0a";
+    ctx.fillRect(0, 0, state.width, state.height);
+  }
 
-  ctx.fillStyle = "#ffcfbf";
+  const panelWidth = Math.min(360, state.width - 40);
+  const panelHeight = 144;
+  const panelX = (state.width - panelWidth) / 2;
+  const panelY = state.height * 0.58 - panelHeight / 2;
+
+  ctx.fillStyle = "rgba(12, 8, 7, 0.58)";
+  ctx.strokeStyle = "rgba(255, 207, 134, 0.24)";
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.roundRect(panelX, panelY, panelWidth, panelHeight, 20);
+  ctx.fill();
+  ctx.stroke();
+
   ctx.textAlign = "center";
-  ctx.font = "800 44px system-ui, sans-serif";
-  ctx.fillText("GAME OVER", state.width / 2, state.height / 2 - 28);
+  ctx.fillStyle = "#ffcfbf";
+  ctx.font = "800 40px system-ui, sans-serif";
+  ctx.fillText("GAME OVER", state.width / 2, panelY + 48);
 
-  ctx.fillStyle = "rgba(255, 244, 232, 0.85)";
-  ctx.font = "500 18px system-ui, sans-serif";
-  ctx.fillText(`Final score ${state.score}`, state.width / 2, state.height / 2 + 4);
-  ctx.fillText("Press R to try again", state.width / 2, state.height / 2 + 34);
+  ctx.fillStyle = "rgba(255, 244, 232, 0.9)";
+  ctx.font = "500 17px system-ui, sans-serif";
+  ctx.fillText(`Final score ${state.score}`, state.width / 2, panelY + 82);
+  ctx.fillText("Press R to try again", state.width / 2, panelY + 112);
   ctx.restore();
 }
 
@@ -172,6 +190,7 @@ export default function Shooter() {
   const canvasRef = useRef(null);
   const wrapperRef = useRef(null);
   const gameRef = useRef(null);
+  const gameOverImageRef = useRef(null);
   const keysRef = useRef(new Set());
   const animationFrameRef = useRef(0);
   const [started, setStarted] = useState(false);
@@ -223,6 +242,10 @@ export default function Shooter() {
     };
 
     gameRef.current = gameState;
+
+    const gameOverImageElement = new Image();
+    gameOverImageElement.src = gameOverImage;
+    gameOverImageRef.current = gameOverImageElement;
 
     const resizeCanvas = () => {
       const width = Math.max(320, Math.floor(wrapper.clientWidth));
@@ -484,7 +507,7 @@ export default function Shooter() {
       if (!gameState.started) {
         drawStartScreen(context, gameState);
       } else if (gameState.gameOver) {
-        drawGameOver(context, gameState);
+        drawGameOver(context, gameState, gameOverImageRef.current);
       }
 
       animationFrameRef.current = window.requestAnimationFrame(render);
