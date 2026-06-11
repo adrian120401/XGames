@@ -5,6 +5,7 @@ import AssasainCreed from "./pages/AssasainCreed";
 import Expedition33 from "./pages/Expedition33";
 import SpiderMan from "./pages/SpiderMan";
 import Candycrush from "./pages/Candycrush";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
