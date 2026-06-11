@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 
 const API_KEY = "6b741a7861b348f0b4c886ffc8c5eab1";
@@ -34,12 +35,12 @@ export default function NavBar() {
         <a href="/" className="navbar-btn">
           Inicio
         </a>
-        <a href="#juegos" className="navbar-btn">
+        <a href="/#juegos" className="navbar-btn">
           Juegos
         </a>
-        <a href="#" className="navbar-btn">
-          Sobre nosotros
-        </a>
+        <Link to="/AboutUs" className="navbar-btn">
+  Sobre nosotros
+</Link>
       </div>
 
       <div className="navbar-search">
