@@ -3,6 +3,88 @@
 	margin: 1.25rem auto 2rem;
 }
 
+.age-gate {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	display: grid;
+	place-items: center;
+	padding: 1rem;
+	background: rgba(2, 5, 8, 0.78);
+	backdrop-filter: blur(8px);
+}
+
+.age-gate__dialog {
+	width: min(100%, 430px);
+	padding: 1.35rem;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	background:
+		linear-gradient(180deg, rgba(17, 29, 40, 0.98), rgba(7, 11, 16, 0.98));
+	box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+	color: #f2f7fb;
+}
+
+.age-gate__eyebrow {
+	margin: 0 0 0.45rem;
+	color: rgba(135, 197, 64, 0.9);
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.age-gate__title {
+	margin: 0;
+	color: #f2f7fb;
+	font-size: 1.45rem;
+	line-height: 1.15;
+}
+
+.age-gate__copy {
+	margin: 0.75rem 0 0;
+	color: rgba(236, 243, 249, 0.78);
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.age-gate__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.65rem;
+	margin-top: 1.25rem;
+}
+
+.age-gate__button {
+	min-height: 44px;
+	padding: 0.7rem 1rem;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	font-weight: 700;
+	line-height: 1.1;
+	cursor: pointer;
+	transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.age-gate__button:hover,
+.age-gate__button:focus-visible {
+	transform: translateY(-1px);
+	outline: none;
+}
+
+.age-gate__button--primary {
+	flex: 1 1 220px;
+	background: linear-gradient(180deg, #87c540, #6ca02c);
+	border-color: #6ca02c;
+	color: #071008;
+}
+
+.age-gate__button--secondary {
+	flex: 1 1 90px;
+	background: rgba(255, 255, 255, 0.04);
+	color: #f2f7fb;
+}
+
 .game-shell__back-btn {
 	padding-inline: 0.95rem;
 	font-weight: 600;

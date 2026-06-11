@@ -1,0 +1,74 @@
+/* Contenedor general de la sección */
+.xgames-section {
+  padding: 40px 20px;
+  background-color: #050b14; /* Color oscuro base de tu fondo */
+  display: flex;
+  justify-content: center;
+}
+
+/* Grid responsivo: 1 col en móvil, 2 en tablets, 4 en desktop */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Estilo de cada Card individual (Columna) */
+.card-column {
+  background: rgba(255, 255, 255, 0.03); /* Fondo oscuro semitransparente */
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Borde sutil */
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efecto Hover interactivo estilo gaming */
+.card-column:hover {
+  transform: translateY(-5px);
+  border-color: #1a5c96; /* Azul sutil inspirado en tu navbar */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(26, 92, 150, 0.2);
+}
+
+/* Sección 1: Contenedor e Imagen */
+.card-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  background-color: #101622; /* Fondo de carga para la imagen */
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card-column:hover .card-image {
+  transform: scale(1.05); /* Zoom sutil a la imagen al hacer hover a la card */
+}
+
+/* Sección 2: Título */
+.card-title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: sans-serif; /* Cambiar por la fuente de tu app */
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Sección 3: Párrafo */
+.card-text {
+  color: #4a5464; /* Color gris oscuro/atenuado que se ve en tu imagen */
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  font-family: sans-serif;
+}

@@ -1,5 +1,6 @@
 import '../styles/game.css';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import NavBar from './NavBar';
 import Comments from './Comments';
 
@@ -40,12 +41,77 @@ function Game({
     price,
     description,
     gameId,
+    requiresAgeVerification = false,
 }) {
     const embedUrl = buildYoutubeEmbedUrl(youtubeUrl);
+    const navigate = useNavigate();
+    const [ageDialog, setAgeDialog] = useState(
+        requiresAgeVerification ? 'verification' : 'hidden'
+    );
+
+    function confirmAge() {
+        setAgeDialog('hidden');
+    }
+
+    function rejectAge() {
+        setAgeDialog('rejected');
+
+        window.setTimeout(() => {
+            navigate('/');
+        }, 2200);
+    }
 
     return (
         <div>
             <NavBar />
+
+            {requiresAgeVerification && ageDialog !== 'hidden' ? (
+                <div className="age-gate" role="presentation">
+                    <div
+                        className="age-gate__dialog"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="age-gate-title"
+                    >
+                        {ageDialog === 'verification' ? (
+                            <>
+                                <p className="age-gate__eyebrow">Verificacion de edad</p>
+                                <h2 id="age-gate-title" className="age-gate__title">
+                                    Debes ser mayor de 18 años
+                                </h2>
+                                <p className="age-gate__copy">
+                                    Confirma que cumples con el requisito de edad para ver este
+                                    juego.
+                                </p>
+                                <div className="age-gate__actions">
+                                    <button
+                                        className="age-gate__button age-gate__button--primary"
+                                        type="button"
+                                        onClick={confirmAge}
+                                    >
+                                        Si, tengo 18 años o mas
+                                    </button>
+                                    <button
+                                        className="age-gate__button age-gate__button--secondary"
+                                        type="button"
+                                        onClick={rejectAge}
+                                    >
+                                        No
+                                    </button>
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <p className="age-gate__eyebrow">Acceso restringido</p>
+                                <h2 id="age-gate-title" className="age-gate__title">
+                                    no cumples con los requisitos de edad, volviendo a la pagina
+                                    principal
+                                </h2>
+                            </>
+                        )}
+                    </div>
+                </div>
+            ) : null}
 
             <section
                 className="game-shell container-fluid px-3 px-md-4"
