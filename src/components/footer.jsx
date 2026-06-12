@@ -1,4 +1,4 @@
-import { FaYoutube, FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaYoutube, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import "../styles/footer.css";
 
 export default function Footer() {
@@ -33,6 +33,12 @@ export default function Footer() {
             >
               {" "}
               <FaFacebook />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/animadual?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            >
+              <FaInstagram />{" "}
             </a>
             <a target="_blank" href="https://x.com/animadual">
               <FaTwitter />{" "}
