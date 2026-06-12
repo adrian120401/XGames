@@ -6,10 +6,10 @@ import sonidos from '../assets/sonidos/quack_5.mp3';
 const API_KEY = "6b741a7861b348f0b4c886ffc8c5eab1";
 
 const reproducirSonido = (e) => {
-  // Evita que el enlace recargue o mueva la página
+ 
   e.preventDefault(); 
   
-  const audio = new Audio(sonidos); // O la ruta que estés usando
+  const audio = new Audio(sonidos); 
   audio.play().catch(error => console.error("Error al reproducir:", error));
 };
 
