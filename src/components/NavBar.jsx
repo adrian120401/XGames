@@ -1,8 +1,17 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
+import sonidos from '../assets/sonidos/quack_5.mp3';
 
 const API_KEY = "6b741a7861b348f0b4c886ffc8c5eab1";
+
+const reproducirSonido = (e) => {
+  // Evita que el enlace recargue o mueva la página
+  e.preventDefault(); 
+  
+  const audio = new Audio(sonidos); // O la ruta que estés usando
+  audio.play().catch(error => console.error("Error al reproducir:", error));
+};
 
 export default function NavBar() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -13,7 +22,7 @@ export default function NavBar() {
     const value = e.target.value;
     setQuery(value);
 
-    if (value.lenght < 2) {
+    if (value.length < 2) {
       setResults([]);
       return;
     }
@@ -27,7 +36,7 @@ export default function NavBar() {
 
   return (
     <nav className="navbar">
-      <a href="#" className="navbar-logo">
+      <a href="#" className="navbar-logo" onClick={reproducirSonido}>
         X<span>Games</span>
       </a>
 
