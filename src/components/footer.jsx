@@ -50,49 +50,80 @@ export default function Footer() {
         <div className="footer-links">
           <div>
             <h3>Ánima</h3>
-            <a href="https://anima.edu.uy/quienes-somos/">Acerca de Ánima</a>
-            <a href="https://anima.edu.uy/plus-dual/">+Dual</a>
-            <a href="https://anima.edu.uy/comunidad/">Comunidad</a>
-            <a href="https://anima.edu.uy/donaciones/">Donar</a>
-            <a href="https://anima.edu.uy/comunidad/#idSponsors">Sponsors</a>
+            <a href="https://anima.edu.uy/quienes-somos/" target="_blank">
+              Acerca de Ánima
+            </a>
+            <a href="https://anima.edu.uy/plus-dual/" target="_blank">
+              +Dual
+            </a>
+            <a href="https://anima.edu.uy/comunidad/" target="_blank">
+              Comunidad
+            </a>
+            <a href="https://anima.edu.uy/donaciones/" target="_blank">
+              Donar
+            </a>
+            <a
+              href="https://anima.edu.uy/comunidad/#idSponsors"
+              target="_blank"
+            >
+              Sponsors
+            </a>
           </div>
 
           <div>
             <h3>Finest</h3>
-            <a href="https://anima.edu.uy/finest/">¿Que es Finest?</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSccyNIAJOc9IkG9AViI71sOhfbqe2K3hISOtCCv6XwvID6XOA/viewform">
+            <a href="https://anima.edu.uy/finest/" target="_blank">
+              ¿Que es Finest?
+            </a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSccyNIAJOc9IkG9AViI71sOhfbqe2K3hISOtCCv6XwvID6XOA/viewform"
+              target="_blank"
+            >
               Inscripción
             </a>
-            <a href="https://anima.edu.uy/academia-de-empleabilidad/">
+            <a
+              href="https://anima.edu.uy/academia-de-empleabilidad/"
+              target="_blank"
+            >
               Academia de empleabilidad
             </a>
-            <a href="https://anima.edu.uy/comunidad/#idEmpresasFormadoras">
+            <a
+              href="https://anima.edu.uy/comunidad/#idEmpresasFormadoras"
+              target="_blank"
+            >
               Empresas formadoras
             </a>
           </div>
 
           <div>
             <h3>Programas</h3>
-            <a href="https://anima.edu.uy/programa-educativo/">
+            <a href="https://anima.edu.uy/programa-educativo/" target="_blank">
               Bachillerato tecnológico
             </a>
-            <a href="https://anima.edu.uy/finest/">Finest</a>
-            <a href="https://anima.edu.uy/academia-de-empleabilidad/">
+            <a href="https://anima.edu.uy/finest/" target="_blank">
+              Finest
+            </a>
+            <a
+              href="https://anima.edu.uy/academia-de-empleabilidad/"
+              target="_blank"
+            >
               Academia de empleabilidad
             </a>
           </div>
 
           <div>
             <h3>MÁS</h3>
-            <a href="https://anima.edu.uy/comunidad/#idEquipo">Equipo</a>
+            <a href="https://anima.edu.uy/comunidad/#idEquipo" target="_blank">
+              Equipo
+            </a>
             <a href="tel:+59829093640">(+598) 2909 3640</a>
             <a href="mailto:info@anima.edu.uy">info@anima.edu.uy</a>
             <a
-              href="https://maps.app.goo.gl/EBp5yr56wVaqdHhT7"
+              href="https://maps.app.goo.gl/61h7awb6jNduUxGn9"
               target="_blank"
               rel="noreferrer"
             >
-              Mercedes 984 esq. Julio Herrera y Obes
+              Mercedes 984, esq. Julio Herrera y Obes
             </a>
           </div>
         </div>
